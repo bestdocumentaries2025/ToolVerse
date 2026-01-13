@@ -22,29 +22,53 @@ const FractionCalculator: React.FC = () => {
     setResult(`${resN / common} / ${resD / common}`);
   }, [n1, d1, n2, d2, op]);
 
+  const FractionInput = ({ n, setN, d, setD }: any) => (
+    <div className="flex flex-col gap-2 items-center">
+      <input 
+        type="number" 
+        value={n} 
+        onChange={e => setN(Number(e.target.value))} 
+        className="w-16 sm:w-24 p-3 sm:p-5 text-center bg-slate-50 dark:bg-slate-900 rounded-xl border-2 border-slate-100 dark:border-slate-800 font-black text-xl sm:text-2xl dark:text-white" 
+      />
+      <div className="h-1.5 bg-slate-900 dark:bg-slate-700 w-full rounded-full"></div>
+      <input 
+        type="number" 
+        value={d} 
+        onChange={e => setD(Number(e.target.value))} 
+        className="w-16 sm:w-24 p-3 sm:p-5 text-center bg-slate-50 dark:bg-slate-900 rounded-xl border-2 border-slate-100 dark:border-slate-800 font-black text-xl sm:text-2xl dark:text-white" 
+      />
+    </div>
+  );
+
   return (
-    <div className="flex flex-col items-center gap-10">
-      <div className="flex items-center gap-6">
-        <div className="flex flex-col gap-2">
-          <input type="number" value={n1} onChange={e => setN1(Number(e.target.value))} className="w-20 p-4 text-center bg-slate-50 rounded-xl border-2 border-slate-200 font-bold" />
-          <div className="h-1 bg-slate-900 w-full rounded-full"></div>
-          <input type="number" value={d1} onChange={e => setD1(Number(e.target.value))} className="w-20 p-4 text-center bg-slate-50 rounded-xl border-2 border-slate-200 font-bold" />
+    <div className="flex flex-col items-center gap-8 sm:gap-12 py-4 sm:py-6">
+      <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+        <FractionInput n={n1} setN={setN1} d={d1} setD={setD1} />
+        
+        <div className="flex items-center justify-center">
+          <select 
+            value={op} 
+            onChange={e => setOp(e.target.value)} 
+            className="p-4 sm:p-6 bg-slate-900 text-white rounded-2xl font-black text-2xl sm:text-4xl shadow-xl hover:scale-105 transition-transform appearance-none cursor-pointer"
+          >
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+          </select>
         </div>
-        <select value={op} onChange={e => setOp(e.target.value)} className="p-4 bg-slate-900 text-white rounded-xl font-black text-2xl">
-          <option value="+">+</option>
-          <option value="-">-</option>
-          <option value="*">×</option>
-          <option value="/">÷</option>
-        </select>
-        <div className="flex flex-col gap-2">
-          <input type="number" value={n2} onChange={e => setN2(Number(e.target.value))} className="w-20 p-4 text-center bg-slate-50 rounded-xl border-2 border-slate-200 font-bold" />
-          <div className="h-1 bg-slate-900 w-full rounded-full"></div>
-          <input type="number" value={d2} onChange={e => setD2(Number(e.target.value))} className="w-20 p-4 text-center bg-slate-50 rounded-xl border-2 border-slate-200 font-bold" />
-        </div>
+
+        <FractionInput n={n2} setN={setN2} d={d2} setD={setD2} />
       </div>
-      <div className="text-center">
-        <p className="text-slate-400 uppercase font-black text-xs tracking-widest mb-4">Simplified Result</p>
-        <p className="text-6xl font-black text-brand-500">{result}</p>
+
+      <div className="w-full max-w-sm p-8 sm:p-12 bg-brand-50 dark:bg-brand-900/10 rounded-[3rem] border-2 border-brand-100 dark:border-brand-900/20 text-center shadow-inner relative overflow-hidden">
+        <p className="text-brand-600 dark:text-brand-400 uppercase font-black text-[10px] sm:text-xs tracking-[0.4em] mb-4 sm:mb-6">Simplified Result</p>
+        <div className="relative z-10">
+           <p className="text-4xl sm:text-6xl font-black text-slate-900 dark:text-white tracking-tighter break-words">
+             {result}
+           </p>
+        </div>
+        <div className="absolute top-0 right-0 p-8 opacity-5 text-8xl font-black pointer-events-none">½</div>
       </div>
     </div>
   );
