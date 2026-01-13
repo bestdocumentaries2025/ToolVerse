@@ -31,6 +31,10 @@ import AreaVolumeCalculator from '../components/calculators/AreaVolumeCalculator
 import CaseConverter from '../components/calculators/CaseConverter';
 import WordCounter from '../components/calculators/WordCounter';
 import CurrencyConverter from '../components/calculators/CurrencyConverter';
+import PDFCompressor from '../components/calculators/PDFCompressor';
+import PDFToImageConverter from '../components/calculators/PDFToImageConverter';
+
+
 
 // Advanced Business & Real Estate
 import MortgageCalculator from '../components/calculators/MortgageCalculator';
@@ -93,6 +97,8 @@ const ToolPage: React.FC = () => {
       case 'timestamp-converter': return <TimestampConverter />;
       case 'json-to-csv': return <JsonToCsv />;
       case 'color-converter': return <ColorConverter />;
+      case 'pdf-compressor-tool': return <PDFCompressor />;
+      case 'pdf-to-image-converter': return <PDFToImageConverter />;
       case 'mortgage-calc': return <MortgageCalculator />;
       case 'profit-margin': return <ProfitMarginCalculator />;
       case 'break-even': return <BreakEvenCalculator />;
