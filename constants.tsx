@@ -49,6 +49,8 @@ export const TOOLS: Tool[] = [
   { id: 'timestamp-converter', name: 'Unix Timestamp', category: 'Developer', description: 'Epoch time to readable date.', slug: 'timestamp-converter', keywords: ['dev', 'time'], icon: '🕒' },
   { id: 'json-to-csv', name: 'JSON to CSV', category: 'Developer', description: 'Transform JSON data into CSV format.', slug: 'json-to-csv', keywords: ['json', 'csv'], icon: '📊' },
   { id: 'color-converter', name: 'Color Converter', category: 'Developer', description: 'HEX, RGB, and HSL conversion.', slug: 'color-converter', keywords: ['ui', 'color'], icon: '🎨' },
+  { id: 'pdf-compressor-tool', name: 'PDF Compressor Tool', category: 'Developer', description: 'Reduces PDF file size without losing quality.', slug: 'pdf-compressor-tool', keywords: ['pdf', 'compression'], icon: '🗜️' },
+  { id: 'pdf-to-image-converter', name: 'PDF To Image Converter', category: 'Converters', description: 'Converts PDF pages into image files.', slug: 'pdf-to-image-converter', keywords: ['pdf', 'image'], icon: '📑🖼️' },
 
   // Daily Utility (8)
   { id: 'travel-time', name: 'Travel Time', category: 'Daily', description: 'Land travel duration for walking, cycling, or driving.', slug: 'travel-time-calc', keywords: ['travel', 'distance', 'time', 'car', 'bike'], icon: '🚗' },
