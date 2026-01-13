@@ -50,7 +50,11 @@ export const TOOLS: Tool[] = [
   { id: 'json-to-csv', name: 'JSON to CSV', category: 'Developer', description: 'Transform JSON data into CSV format.', slug: 'json-to-csv', keywords: ['json', 'csv'], icon: '📊' },
   { id: 'color-converter', name: 'Color Converter', category: 'Developer', description: 'HEX, RGB, and HSL conversion.', slug: 'color-converter', keywords: ['ui', 'color'], icon: '🎨' },
 
-  // Daily Utility (4)
+  // Daily Utility (8)
+  { id: 'travel-time', name: 'Travel Time', category: 'Daily', description: 'Land travel duration for walking, cycling, or driving.', slug: 'travel-time-calc', keywords: ['travel', 'distance', 'time', 'car', 'bike'], icon: '🚗' },
+  { id: 'air-travel', name: 'Air Travel', category: 'Daily', description: 'Estimated flight duration based on air distance.', slug: 'air-travel-calc', keywords: ['flight', 'air', 'travel', 'plane'], icon: '✈️' },
+  { id: 'stopwatch-tool', name: 'Stopwatch', category: 'Daily', description: 'Precision stopwatch with lap timing capabilities.', slug: 'stopwatch', keywords: ['timer', 'stopwatch', 'time'], icon: '⏱️' },
+  { id: 'alarm-clock', name: 'Alarm System', category: 'Daily', description: 'Set professional alerts and wake-up notifications.', slug: 'alarm-clock', keywords: ['alarm', 'clock', 'wake'], icon: '🔔' },
   { id: 'age-calc', name: 'Age Calculator', category: 'Daily', description: 'Find your exact age in years, months, and days.', slug: 'age-calc', keywords: ['age', 'birthday'], icon: '🎂' },
   { id: 'sleep-calc', name: 'Sleep Cycle', category: 'Daily', description: 'Wake up refreshed by timing sleep cycles.', slug: 'sleep-calc', keywords: ['health', 'sleep'], icon: '😴' },
   { id: 'word-counter', name: 'Word Counter', category: 'Converters', description: 'Text stats and reading time.', slug: 'word-counter', keywords: ['text', 'stats'], icon: '🖊️' },

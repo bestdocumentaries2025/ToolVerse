@@ -46,6 +46,12 @@ import CapRateCalculator from '../components/calculators/CapRateCalculator';
 import RoasCalculator from '../components/calculators/RoasCalculator';
 import ClvCalculator from '../components/calculators/ClvCalculator';
 
+// New Daily Tools
+import TravelTimeCalculator from '../components/calculators/TravelTimeCalculator';
+import AirTravelCalculator from '../components/calculators/AirTravelCalculator';
+import Stopwatch from '../components/calculators/Stopwatch';
+import AlarmClock from '../components/calculators/AlarmClock';
+
 const ToolPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const tool = useMemo(() => TOOLS.find(t => t.slug === slug), [slug]);
@@ -99,6 +105,10 @@ const ToolPage: React.FC = () => {
       case 'cap-rate': return <CapRateCalculator />;
       case 'roas-calc': return <RoasCalculator />;
       case 'clv-calc': return <ClvCalculator />;
+      case 'travel-time': return <TravelTimeCalculator />;
+      case 'air-travel': return <AirTravelCalculator />;
+      case 'stopwatch-tool': return <Stopwatch />;
+      case 'alarm-clock': return <AlarmClock />;
       default:
         return <div className="py-20 text-center italic text-slate-400">This tool is coming soon.</div>;
     }
