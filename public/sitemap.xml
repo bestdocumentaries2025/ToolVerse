@@ -12,26 +12,5 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-
-     <url>
-        <loc>https://tool-verse-free.vercel.app/support/</loc>
-        <lastmod>2026-01-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-     <url>
-        <loc>https://tool-verse-free.vercel.app/terms/</loc>
-        <lastmod>2026-01-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-     <url>
-        <loc>https://tool-verse-free.vercel.app/privacy/</loc>
-        <lastmod>2026-01-05</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
+    
 </urlset>
