@@ -1,0 +1,31 @@
+
+{
+  "collections": [
+    {
+      "name": "tools",
+      "description": "Metadata for all tools/calculators",
+      "fields": {
+        "id": "string (unique identifier)",
+        "name": "string (display name)",
+        "category": "string (Finance, Health, etc.)",
+        "description": "string (brief explanation)",
+        "slug": "string (SEO friendly URL path)",
+        "keywords": "array of strings (for search indexing)",
+        "icon": "string (Emoji or Icon name)",
+        "popularity": "number (for sorting homepage)",
+        "createdAt": "timestamp",
+        "isLive": "boolean"
+      }
+    },
+    {
+      "name": "categories",
+      "description": "Group metadata for filtering",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "color": "string (hex code)",
+        "order": "number"
+      }
+    }
+  ]
+}
