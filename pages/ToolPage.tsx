@@ -33,7 +33,8 @@ import WordCounter from '../components/calculators/WordCounter';
 import CurrencyConverter from '../components/calculators/CurrencyConverter';
 import PDFCompressor from '../components/calculators/PDFCompressor';
 import PDFToImageConverter from '../components/calculators/PDFToImageConverter';
-
+import JSONFormatter from '../components/calculators/JSONFormatter';
+import JavaScriptObfuscatorTool from '../components/calculators/JavaScriptObfuscatorTool';
 
 
 // Advanced Business & Real Estate
@@ -49,6 +50,7 @@ import PropertyTaxCalculator from '../components/calculators/PropertyTaxCalculat
 import CapRateCalculator from '../components/calculators/CapRateCalculator';
 import RoasCalculator from '../components/calculators/RoasCalculator';
 import ClvCalculator from '../components/calculators/ClvCalculator';
+import IPAddressLookup from '../components/calculators/IPAddressLookup';
 
 // New Daily Tools
 import TravelTimeCalculator from '../components/calculators/TravelTimeCalculator';
@@ -115,6 +117,9 @@ const ToolPage: React.FC = () => {
       case 'air-travel': return <AirTravelCalculator />;
       case 'stopwatch-tool': return <Stopwatch />;
       case 'alarm-clock': return <AlarmClock />;
+      case 'ip-address-lookup': return <IPAddressLookup />;
+      case 'json-formatter': return <JSONFormatter />;
+      case 'java-script-obfuscates': return <JavaScriptObfuscatorTool />;
       default:
         return <div className="py-20 text-center italic text-slate-400">This tool is coming soon.</div>;
     }

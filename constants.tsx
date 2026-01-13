@@ -48,9 +48,13 @@ export const TOOLS: Tool[] = [
   { id: 'base64-converter', name: 'Base64 Tool', category: 'Developer', description: 'Encode/Decode text to/from Base64.', slug: 'base64-converter', keywords: ['dev', 'base64'], icon: '🔐' },
   { id: 'timestamp-converter', name: 'Unix Timestamp', category: 'Developer', description: 'Epoch time to readable date.', slug: 'timestamp-converter', keywords: ['dev', 'time'], icon: '🕒' },
   { id: 'json-to-csv', name: 'JSON to CSV', category: 'Developer', description: 'Transform JSON data into CSV format.', slug: 'json-to-csv', keywords: ['json', 'csv'], icon: '📊' },
+  { id: 'json-formatter', name: 'JSON Formatter', category: 'Developer', description: 'Formats and organizes JSON data for readability.', slug: 'json-formatter', keywords: ['json', 'formatter'], icon: '🧩' },
+
+   { id: 'java-script-obfuscates', name: 'JavaScript Obfuscates', category: 'Developer', description: 'Obfuscates and deobfuscates JavaScript to protect and analyze code', slug: 'java-script-obfuscates', keywords: ['javascript', 'obfuscator', 'deobfuscator'], icon: '🔐.' },
   { id: 'color-converter', name: 'Color Converter', category: 'Developer', description: 'HEX, RGB, and HSL conversion.', slug: 'color-converter', keywords: ['ui', 'color'], icon: '🎨' },
-  { id: 'pdf-compressor-tool', name: 'PDF Compressor Tool', category: 'Developer', description: 'Reduces PDF file size without losing quality.', slug: 'pdf-compressor-tool', keywords: ['pdf', 'compression'], icon: '🗜️' },
+  { id: 'pdf-compressor-tool', name: 'PDF Compressor Tool', category: 'Converters', description: 'Reduces PDF file size without losing quality.', slug: 'pdf-compressor-tool', keywords: ['pdf', 'compression'], icon: '🗜️' },
   { id: 'pdf-to-image-converter', name: 'PDF To Image Converter', category: 'Converters', description: 'Converts PDF pages into image files.', slug: 'pdf-to-image-converter', keywords: ['pdf', 'image'], icon: '📑🖼️' },
+  { id: 'ip-address-lookup', name: 'IP Address Lookup', category: 'Developer', description: 'Finds location and details linked to an IP address', slug: 'ip-address-lookup', keywords: ['ip', 'address', 'geolocation'], icon: '🌐' },
 
   // Daily Utility (8)
   { id: 'travel-time', name: 'Travel Time', category: 'Daily', description: 'Land travel duration for walking, cycling, or driving.', slug: 'travel-time-calc', keywords: ['travel', 'distance', 'time', 'car', 'bike'], icon: '🚗' },
