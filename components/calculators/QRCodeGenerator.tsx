@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const QRCodeGenerator: React.FC = () => {
-  const [text, setText] = useState('https://toolverse.app');
+  const [text, setText] = useState('https://tool-verse-free.vercel.app');
   const [size, setSize] = useState(300);
   
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(text)}`;
